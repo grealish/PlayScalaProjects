@@ -11,6 +11,9 @@
                 <li>@user.username @user.firstname @user.lastname @user.email
                     <a href="@routes.Users.edit(user.id)">Edit</a>
                     
+                    @helper.form(routes.Users.delete(user.id)) {
+                    <button type="submit">Delete</button>
+                    }
                 </li>
             }
         </u1>

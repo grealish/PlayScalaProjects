@@ -1,13 +1,12 @@
 package controllers
 
-import models.Project
 import models.User
 import play.api.mvc._
 import play.api.data._
 import play.api.data.Forms._
 import play.api.data.validation._
 import play.api.mvc.Controller
-import scala.colllection.mutable.HashMap
+import scala.collection.mutable.HashMap
 
 object Users extends Controller {
     
@@ -24,7 +23,7 @@ object Users extends Controller {
     )
     
     def add = Action {
-        Ok(view.html.users.add(form))
+        Ok(views.html.users.add(form))
     }
     
     def save = Action { implicit request =>

@@ -1,5 +1,8 @@
 package models
 
+/**
+ * Created by grealish on 23.08.14.
+ */
 case class User(username: String, firstname: String, lastname: String, email: String) {
     var id:Int = User.nextId
 }

@@ -8,8 +8,9 @@
     <h1>A new Project:</h1>
     @form(routes.Projects.save()) {
         @inputText(projectForm("name"))
-        @inputText(projectForm(""))
-        @inputText(projectForm(""))
-        @inputText(projectForm(""))
+        @inputText(projectForm("stackeholders"))
+        @inputText(projectForm("budget"))
+        @checkbox(projectForm("active"))
+        <button type="submit">Save</button>
     }
 }

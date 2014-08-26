@@ -3,15 +3,23 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+GET         /                        controllers.Application.index
 
 # User pages
-GET     /users                      controllers.Users.list
-GET     /users/add                  controllers.Users.add
-POST    /users                      controllers.Users.save
-GET     /users/:id/edit             controllers.Users.edit(id: Int)
-POST    /users/:id                  controllers.Users.update(id: Int)
-POST    /users/:id/delete           controllers.Users.delete(id: Int)
+GET         /users                   controllers.Users.list
+GET         /users/add               controllers.Users.add
+POST        /users                   controllers.Users.save
+GET         /users/:id/edit          controllers.Users.edit(id: Int)
+POST        /users/:id               controllers.Users.update(id: Int)
+POST        /users/:id/delete        controllers.Users.delete(id: Int)
+
+# Project actions
+GET         /projects                   controllers.Projects.list
+GET         /projects/add               controllers.Projects.add
+POST        /projects                   controllers.Projects.save
+GET         /projects/id/edit           controllers.Projects.edit(id: Int)
+GET         /projects/:id               controllers.Projects.update(id: Int)
+GET         /projects/:id/delete        controllers.Projects.delete(id: Int)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET         /assets/*file            controllers.Assets.at(path="/public", file)

@@ -1,10 +1,10 @@
 package controllers
 
 import models.Project
-import play.api.data._
 import play.api.data.Forms._
+import play.api.data._
 import play.api.mvc.{Action, Controller}
-import scala.collection.mutable.Map
+
 import scala.collection.mutable.HashMap
 
 /**
